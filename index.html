@@ -126,6 +126,35 @@
             0% { transform: scale(0); opacity: 1; }
             100% { transform: scale(3); opacity: 0; }
         }
+
+        .additional-images {
+            position: fixed;
+            width: 100px;
+            opacity: 0.8;
+            animation: gentleDrift 7s ease-in-out infinite;
+            filter: drop-shadow(0 0 5px rgba(255, 0, 102, 0.3));
+            z-index: 1;
+        }
+
+        .additional-images.left-top {
+            left: 2%;
+            top: 2%;
+        }
+
+        .additional-images.right-top {
+            right: 2%;
+            top: 2%;
+        }
+
+        .additional-images.left-bottom {
+            left: 2%;
+            bottom: 2%;
+        }
+
+        .additional-images.right-bottom {
+            right: 2%;
+            bottom: 2%;
+        }
     </style>
 </head>
 <body>
@@ -142,6 +171,22 @@
          class="decorative-transparent" 
          style="right: 5%; bottom: 15%; transform: scaleX(-1);"
          alt="Trang trí phải">
+
+    <img src="additional1.png" 
+         class="additional-images left-top"
+         alt="Additional Image 1">
+
+    <img src="additional2.png" 
+         class="additional-images right-top"
+         alt="Additional Image 2">
+
+    <img src="additional3.png" 
+         class="additional-images left-bottom"
+         alt="Additional Image 3">
+
+    <img src="additional4.png" 
+         class="additional-images right-bottom"
+         alt="Additional Image 4">
 
     <div class="container">
         <img src="Mid.png" 
